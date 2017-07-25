@@ -1,0 +1,20 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:noNamespaceSchemaLocation="ehcache.xsd">
+	<cache name="candidates"
+		   maxEntriesLocalHeap="200"
+		   timeToLiveSeconds="600">
+		   <searchable>
+		   		<searchAttribute name="firstname"/>
+		   		<searchAttribute name="lastname"/>
+			</searchable>
+	</cache>
+	
+	<cache name="jobs"
+		   maxEntriesLocalHeap="200"
+		   timeToLiveSeconds="600">
+		   <searchable>
+		   		<searchAttribute name="name"/>
+			</searchable>
+	</cache>
+	
+</ehcache>
